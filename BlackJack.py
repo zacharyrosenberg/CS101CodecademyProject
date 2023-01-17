@@ -28,10 +28,7 @@ class Dealer(Cards):
             else:
                 self.total += cards.value
             
-    def dealerHit(self):
-        while self.total < 17:
-            self.hand.append(deck.pop(random.randrange(len(deck))))
-            self.total += self.hand.value
+
         
 
 
@@ -44,7 +41,6 @@ deck = [Cards(value, suit) for value in values for suit in suits]
 #print(deck)
 casino = Dealer()
 casino.dealCards(hand = [])
-casino.dealerHit()
 print(casino.hand)
 #print(playerHand)
 #print(deck)
