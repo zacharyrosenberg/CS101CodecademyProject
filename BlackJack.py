@@ -4,6 +4,8 @@ suits = ['spade', 'club', 'heart', 'diamond']
 values = ['ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'jack', 'queen', 'king']
 nameToValue = {'jack': 10, 'queen': 10, 'king': 10, 'ace': 11}
 playerHand = []
+playerTotal = 0
+
 class Cards:
     def  __init__(self, value, suit):
         self.value = value
@@ -28,23 +30,36 @@ class Dealer(Cards):
             else:
                 self.total += cards.value
             
+casino = Dealer()
+gameOn = True
 
+
+while gameOn:
+    print('Welcome to Blackjack! Do you want to play?')
+    userInput = input('Yes or No: ')
+    if userInput == 'Yes' or 'yes':
+        casino.dealCards(hand = [])
+    else:
+        print('So long and have a nice day!')
+        gameOn = False
         
 
+    
+    
 
-        
-        
-        
+
+
 
 
 deck = [Cards(value, suit) for value in values for suit in suits]  
 #print(deck)
-casino = Dealer()
-casino.dealCards(hand = [])
-print(casino.hand)
+
+#casino.dealCards(hand = [])
+#print(casino.hand)
 #print(playerHand)
 #print(deck)
-print(casino.total)
+#print(casino.total)
+#print(playerTotal)
 
 
 
