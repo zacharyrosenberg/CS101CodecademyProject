@@ -1,3 +1,3 @@
 # CS101CodecademyProject
  
-This is my terminal final project for the CS 101 course on Codecademy. It is a blackjack game where there is a dealer and an individual player. It is a standard blackjack game, where the goal is to beat the dealer and win money. 
+This is my terminal final project for the CS 101 course on Codecademy. It is a blackjack game where there is a dealer and an individual player. It is a standard blackjack game, where the goal is to beat the dealer and win money. I created three classes, namely a dealer, player, and cards class. The game plays as a normal blackjack game, where the program will ask the player for inputs regarding the current hand being played. 
